@@ -1,0 +1,191 @@
+.perfume{
+    display:block;
+    width: 30%;
+    margin: 60px auto;
+    cursor: url(vaca.png), auto;
+}
+
+.perfume:active{
+  cursor:url(hamilton.png), auto;
+}
+
+#sol{
+    transform:translate(50%);
+    animation: moveSol 7s;
+    animation-iteration-count: infinite;
+}
+
+#nube1{
+    transform:translate(50%);
+    animation: moveSol 1 .9s both;
+    animation-iteration-count: infinite;
+}
+
+#nube2{
+    transform:translate(50%);
+    animation: moveSol 1 .6s both;
+    animation-iteration-count: infinite;
+}
+
+#nube3{
+    transform:translate(50%);
+    animation: moveSol 1 .8s both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveSol{
+    100%{
+
+    transform:unset;
+   }
+}
+
+@keyframes anim{
+    0% {background-color: rgb(184, 251, 251);} 
+   25% {background-color: rgb(0, 208, 255);}
+   50% {background-color: #ead05b;} 
+   75% {background-color: rgb(254, 178, 24);} 
+  100% {background-color: rgb(25, 4, 79);} 
+}
+body {
+  animation-name: anim;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  overflow: scroll;
+  scrollbar-color: rgb(227, 190, 228) transparent;
+  scrollbar-width:thin;
+  text-align: center;
+  cursor: url(vaca.png), auto;
+    }
+
+    body:active{
+      cursor:url(hamilton.png), auto;
+    }
+  
+  body::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    body::-webkit-scrollbar-track {
+      background-color: #a34ea6;
+    }
+    body::-webkit-scrollbar-thumb {
+      background-color:rgb(222, 155, 166);
+    }
+ 
+    .poema{
+      font-family: 'Cinzel', serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Geostar', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Handjet', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Merienda', cursive;
+margin: 0 0 30px 0;
+    }
+
+    .pepe {
+    
+      position:relative;
+      margin-top: 10px;
+      margin-left: 20px;
+      height: 90px;
+      cursor: url(vaca.png), auto;
+     
+    }
+
+    .pepe:active{
+      cursor:url(hamilton.png), auto;
+    }
+    .pepe-contenido {
+      display: none;
+      position: absolute;
+      width: 100%;
+      overflow: auto;
+      box-shadow: 0px 80px 80px 0px rgba(0,0,0,0.4);
+      cursor: url(vaca.png), auto;
+    }
+
+    .pepe-contenido:active{
+      cursor:url(hamilton.png), auto;
+    }
+    .pepe:hover .pepe-contenido {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Handjet', cursive;
+  font-family: 'Press Start 2P', cursive;
+  font-size: large;
+  cursor: url(vaca.png), auto;
+    }
+
+    .pepe:hover:active{
+      cursor:url(hamilton.png), auto;
+    }
+    .pepe-contenido a {
+      display:flex;
+      color: #000000;
+      padding: 5px;
+      text-decoration: none;
+      cursor: url(vaca.png), auto;
+    }
+
+    .pepe-contenido a:active{
+      cursor:url(hamilton.png), auto;
+    }
+    .pepe-contenido a:hover {
+      color: #ff0000;
+      background-color: #d39ae6;
+      cursor: url(vaca.png), auto;
+    }
+  .pepe-contenido:hover:active{
+    cursor:url(hamilton.png), auto;
+  }
+    .pepa{
+      border-color: #0a5523;
+      background-image: -webkit-radial-gradient(rgb(122, 196, 219), rgb(30, 106, 133), rgb(18, 50, 118));
+      border-radius: 40%;
+      display: flex;
+      padding: 4px;
+    
+      cursor: url(vaca.png), auto;
+    }
+
+    .pepa:active{
+      cursor:url(hamilton.png), auto;
+    }
+  
+    .pepa span{
+      
+      -webkit-text-fill-color: aliceblue;
+      font-family: 'Dancing Script', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Handjet', cursive;
+  font-family: 'Press Start 2P', cursive;
+  font-size: smaller;
+  cursor: url(vaca.png), auto;
+    }
+  
+    .pepa span:active{
+      cursor:url(hamilton.png), auto;
+    }
+  
+    nav{
+      display:grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      background: rgb(166, 196, 222);
+      position:fixed;
+      top:0;
+      width:100%;
+      height: 60px;
+      cursor: url(vaca.png), auto;
+      }
+
+      nav:active{
+        cursor:url(hamilton.png), auto;
+      }

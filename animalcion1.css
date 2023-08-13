@@ -1,0 +1,40 @@
+#objeto1{
+transform: translateY(-30%);
+animation: movecosa 7s;
+animation-iteration-count: infinite;
+
+}
+
+@keyframes movecosa{
+    100%{
+
+    transform:unset;
+   
+   }
+}
+
+#objeto2{
+    transform:translate(50%);
+    animation: movecosa 7s both;
+    animation-iteration-count: infinite;
+}
+
+#objeto3{
+    transform:translate(50%);
+    animation: movecosa 7s both;
+    animation-iteration-count: infinite;
+}
+
+#avion{
+    transform:translate(50%);
+    animation: movecosa 7s both;
+    animation-iteration-count: infinite;
+}
+
+
+.dibujo{
+display: block;
+width: 80%;
+height: 500px;
+
+}

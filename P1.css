@@ -1,0 +1,256 @@
+.scenes {
+    position: relative;
+    aspect-ratio: 2.4 / 1;
+    outline: 2px solid #ccc;
+  }
+  
+  .scene-1, .scene-2 {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+  }
+  
+  .scene-1 {
+    background-image: url(https://assets.codepen.io/77020/sw-horizontal-wipe-scene-1.jpg);
+  }
+  
+  .scene-2 {
+    background-image: url(https://assets.codepen.io/77020/sw-horizontal-wipe-scene-2.jpg);
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 47.5%,
+      #fff 52.5%
+    );
+    -webkit-mask-size: 210%;
+    -webkit-mask-position: left;
+  }
+  
+  .scenes:is(:hover, :focus) .scene-2 {
+    -webkit-mask-position: right;
+    transition: -webkit-mask-position 2s linear;
+  }
+  
+
+  
+  body {
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
+    background-color:  rgb(204, 213, 224);
+overflow: scroll;
+scrollbar-color: rgb(227, 190, 228) transparent;
+scrollbar-width:thin;
+text-align: center;
+
+
+  }
+
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  body::-webkit-scrollbar-track {
+    background-color:rgb(222, 162, 179);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color:#95d3ad;
+  }
+  
+  .wrapper {
+   
+    display: grid;
+    align-items: center;
+    gap: 30px;
+    width: min(700px, 90%);
+    margin: 20px 0 0 0;
+    cursor: url(s2.png), auto;
+  }
+
+  .wrapper:active{
+    cursor: url(a2.png), auto;
+  }
+  
+  .scenes:is(:hover, :focus) + .visualizer .visualizer-mask {
+    transform: translateX(calc((100% - 210%) / 2.1));
+    transition: transform 2s linear;
+  }
+
+  .pepe {
+    
+    position:relative;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 90px;
+ 
+   
+  }
+  .pepe-contenido {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 80px 80px 0px rgba(0,0,0,0.4);
+    
+  }
+  .pepe:hover .pepe-contenido {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Handjet', cursive;
+font-family: 'Press Start 2P', cursive;
+font-size: large;
+
+  }
+  .pepe-contenido a {
+    display:flex;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .pepe-contenido a:hover {
+    color: #ff0000;
+    background-color: #d39ae6;
+    
+  }
+
+  .pepa{
+    border-color: #0a5523;
+    background-image: -webkit-radial-gradient(rgb(122, 196, 219), rgb(30, 106, 133), rgb(18, 50, 118));
+    border-radius: 40%;
+    display: flex;
+    padding: 4px;
+    cursor: pointer;
+   
+  }
+
+  .pepa span{
+    
+    -webkit-text-fill-color: aliceblue;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Handjet', cursive;
+font-family: 'Press Start 2P', cursive;
+font-size: smaller;
+   
+  }
+
+  .cuerpo{
+    display: grid;
+    place-items: center;
+    border-radius: 7%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    margin: 170px 0 0 0;
+   
+    background-image:linear-gradient(rgb(194, 222, 194), rgb(158, 230, 172), rgb(95, 174, 95), rgb(84, 146, 68));
+  }
+
+  nav{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background: rgb(166, 196, 222);
+    position:fixed;
+    top:0;
+    width:100%;
+    height: 60px;
+    }
+
+    .starwars{
+    height: 100px;    
+    background-image:radial-gradient(rgb(230, 194, 230), rgb(222, 143, 222), rgb(191, 170, 191));
+    border-radius: 30%;
+    border-width: 10px;
+    border-color: #480e5b;
+    transition:2.5s;
+  -webkit-transition:2.5s;
+  -moz-transition:2.5s;
+  -o-transition:2.5s;
+
+    }
+
+    .starwars:hover {
+      -webkit-transform:rotate(360deg);
+      -moz-transform:rotate(360deg);
+      -o-transform:rotate(360deg);
+      transform:rotate(360deg);
+     
+    }
+    .starwars a:hover{
+      background-color: #42faa1;
+      -webkit-text-fill-color: #ff0000;
+
+    }
+
+    .starwars a{
+        text-decoration: none;
+        font-family: 'Cormorant Garamond', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Geostar', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Handjet', cursive;
+font-family: 'Press Start 2P', cursive;
+-webkit-text-fill-color: blueviolet;
+
+    }
+    .uno{
+        height: 100px;    
+        width: 150px;
+    background-image:radial-gradient(rgb(184, 201, 216), rgb(131, 150, 207), rgb(192, 214, 227));
+    border-radius: 30%;
+    border-width: 10px;
+    border-color: #161265;
+    transition:2.5s;
+    -webkit-transition:2.5s;
+    -moz-transition:2.5s;
+    -o-transition:2.5s;
+    
+    }
+
+    .uno:hover{
+      -webkit-transform:rotate(360deg);
+      -moz-transform:rotate(360deg);
+      -o-transform:rotate(360deg);
+      transform:rotate(360deg);
+    }
+
+    .uno a{
+        text-decoration: none;
+        font-family: 'Cormorant Garamond', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Geostar', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Handjet', cursive;
+font-family: 'Press Start 2P', cursive;
+-webkit-text-fill-color: blueviolet;
+ 
+    }
+
+    .uno a:hover{
+        background-color: #dfe44c;
+        -webkit-text-fill-color: #604200;
+        
+        }
+
+   
+  
+@keyframes latidos {
+  from { transform: none; }
+  50% { transform: scale(1.4); }
+  to { transform: none; }
+}
+
+.corazon {
+display:block;
+font-size: 150px;
+text-shadow: 10px 10px  0 #750f0f;
+box-shadow: 10px 10px  0 #b6d7d9;
+animation: latidos .5s infinite;
+cursor: url(a1.png), auto;
+}
+
+

@@ -1,0 +1,327 @@
+body{
+    overflow: scroll;
+    scrollbar-color: rgb(227, 190, 228) transparent;
+      scrollbar-width:thin;
+}
+
+ body::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+   body::-webkit-scrollbar-track {
+        background-color:#e9c0c0;
+      }
+    body::-webkit-scrollbar-thumb {
+        background-color:rgb(0, 0, 255);
+      }
+
+.pepe {
+    
+    position:relative;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 90px;
+   
+  }
+  .pepe-contenido {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 80px 80px 0px rgba(0,0,0,0.4);
+  }
+  .pepe:hover .pepe-contenido {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Handjet', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-size: large;
+  }
+  .pepe-contenido a {
+    display:flex;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .pepe-contenido a:hover {
+    color: #ff0000;
+    background-color: #d39ae6;
+  }
+
+  .pepa{
+    border-color: #0a5523;
+    background-image: -webkit-radial-gradient(rgb(122, 196, 219), rgb(30, 106, 133), rgb(18, 50, 118));
+    border-radius: 40%;
+    display: flex;
+    padding: 4px;
+    cursor: pointer;
+   
+  }
+
+    
+
+  .pepa span{
+    
+    -webkit-text-fill-color: aliceblue;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Handjet', cursive;
+font-family: 'Press Start 2P', cursive;
+font-size: smaller;
+   
+  }
+
+  nav{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background: rgb(233, 191, 191);
+    position:absolute;
+    top:0;
+    width:100%;
+    height: 60px;
+    }
+    
+    .primero{
+        border-radius: 15%;
+      
+          background-image:radial-gradient(rgb(218, 175, 175), rgb(150, 193, 205), rgb(231, 150, 150), rgb(196, 207, 222));
+          display: grid; 
+          grid-template-columns: repeat(2, 1fr);
+          margin: 1rem;
+          align-items: center; 
+          text-align: center;
+          justify-content: center;
+          margin-right: 15px;
+          margin-top: 20px;
+      }
+      
+      .cosa{
+        margin:100px;
+        
+      }
+      
+      .padre{
+      width: 500px;
+      height: 500px;
+      display: flex;
+      display: grid;
+      justify-content: center;
+      flex-wrap: wrap;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      margin-left: 60px;
+      scrollbar-color: rgb(227, 190, 228) transparent;
+      scrollbar-width:thin;
+      }
+      
+      .padre::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      .padre::-webkit-scrollbar-track {
+        background-color:#9ad6e6;
+      }
+      .padre::-webkit-scrollbar-thumb {
+        background-color:rgb(255, 0, 0);
+      }
+      
+      .cuadrito{
+        border-color: #000000;
+        border-width: 60px;
+      }
+      
+      .hadi{
+        
+          border-color: rgb(230, 26, 26);
+          border-width: 6px;
+          border-radius: 20%;
+          background-image: linear-gradient(rgb(116, 142, 167), rgb(129, 198, 210), rgb(174, 203, 224));
+              display: flex;
+              font-size: 18px;
+              padding: 4px;
+              cursor: pointer;
+              transition-duration: 3s;
+              margin-top: 20px;
+              margin-right: 2px;
+              margin-left: 40px;
+             
+      }
+      
+      .hadi span{
+          background-color: none;
+          text-align:justify;
+          font-family: 'Handjet', cursive;
+          text-transform: uppercase;
+         font-size: xx-large;
+         -webkit-text-fill-color: rgb(255, 0, 0);
+         transition-duration: 2s;
+         display: grid;
+         align-items: center; 
+         text-align: center; 
+      
+      }
+      
+      .hadi:hover span{
+          background-color: rgb(227, 119, 119);
+          border-radius: 20%;
+          transition-duration: 2s;
+      
+       }
+      
+       .hadi:active{
+      
+          transform: scale(0.5);
+          transition-duration: 2s;
+      
+       }
+
+       .hvr-outline-in {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+      }
+      .hvr-outline-in:before {
+        pointer-events: none;
+        content: '';
+        position: absolute;
+        border: #ff0101 solid 4px;
+        border-radius: 20%;
+        top: -27px;
+        right: -27px;
+        bottom: -27px;
+        left: -27px;
+        opacity: 0;
+        -webkit-transition-duration: 1s;
+        transition-duration: 1s;
+        -webkit-transition-property: top, right, bottom, left;
+        transition-property: top, right, bottom, left;
+      }
+      .hvr-outline-in:hover:before, .hvr-outline-in:focus:before, .hvr-outline-in:active:before {
+        top: -8px;
+        right: -8px;
+        bottom: -8px;
+        left: -8px;
+        opacity: 1;
+      }
+      
+      a{
+          text-decoration: none;
+          font-family: 'Gloria Hallelujah', cursive;
+      font-family: 'Handjet', cursive;
+      font-family: 'Press Start 2P', cursive;
+      }
+
+      .hijo2:hover{
+        filter: blur(5px);
+        transition-duration: 1s;
+      }
+      
+    .hijo3:hover{
+      filter: opacity(.5);
+      transition-duration: 1s;
+    }
+     
+    .hijo4:hover{
+      -webkit-transform:scale(1.3);transform:scale(1.3);
+      transition-duration: 1s;
+    }
+
+    .hijo5:hover{
+      -webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(180deg);
+transform-style: preserve-3d;
+transition-duration: 0.5s;
+    }
+
+    .hijo6:hover{
+      
+      filter: saturate(180%);
+      transition-duration: 1s;
+   
+    }
+.hijo6{
+  -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+
+:root {
+  --color-background:rgb(204, 213, 224);
+  --color-default: #000;
+  --color-accent-1: deepskyblue;
+  --color-accent-2: violet;
+}
+
+body {
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn {
+  position: absolute;
+  padding: 10px 16px;
+  background-color: var(--color-background);
+  border: var(--color-default) solid 3px;
+  color: var(--color-default);
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  cursor:url(esp.png), auto;
+
+}
+
+
+
+.lightsaber {
+  width: 200px;
+  position: absolute;
+}
+
+.lightsaber.second {
+  transform: rotate(90deg);
+}
+
+.first-blade {
+  fill: var(--color-accent-1);
+}
+
+.second-blade {
+  fill: var(--color-accent-2);
+}
+
+.handle {
+  fill: var(--color-default);
+}
+
+
+.dark-mode {
+  --color-background: #ea8e8e;
+  --color-default: #f9f9f9;
+  --color-accent-1: cyan;
+  --color-accent-2: magenta;
+}
+
+.dark-mode .lightsaber path {
+  transition: fill .12s ease-in;
+}
+

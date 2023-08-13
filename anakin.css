@@ -1,0 +1,188 @@
+
+.titulito{
+  width: 50px;
+  margin: -200px 0 0 50px;
+  height: 30%;
+  font: 16em/1 Arial;
+}
+
+.leer{
+  margin: 120px 0 0 0;
+  width: 500px;
+height: 500px;
+display: flex;
+display: grid;
+justify-content: center;
+flex-wrap: wrap;
+overflow-y: scroll;
+overflow-x: hidden;
+margin-left: 60px;
+background-color:rgb(224, 220, 174);
+scrollbar-color: #09C transparent;
+scrollbar-width: thin;
+}
+
+.leer::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.leer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.leer::-webkit-scrollbar-thumb {
+  background-color:rgb(255, 0, 0);
+}
+
+p{
+  width: 400px;
+ font-weight: 30px;
+margin: 20px 1px 20px 1px;
+}
+
+
+
+.todo{
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1rem;
+
+}
+
+
+
+.pepe {
+    
+    position:relative;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 90px;
+ 
+   
+  }
+  .pepe-contenido {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 80px 80px 0px rgba(0,0,0,0.4);
+    
+  }
+  .pepe:hover .pepe-contenido {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Handjet', cursive;
+font-family: 'Press Start 2P', cursive;
+font-size: large;
+
+  }
+  .pepe-contenido a {
+    display:flex;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .pepe-contenido a:hover {
+    color: #ff0000;
+    background-color: #d39ae6;
+  }
+
+  .pepa{
+    border-color: #0a5523;
+    background-image: -webkit-radial-gradient(rgb(122, 196, 219), rgb(30, 106, 133), rgb(18, 50, 118));
+    border-radius: 40%;
+    display: flex;
+    padding: 4px;
+    cursor: pointer;
+   
+  }
+
+  .pepa span{
+    
+    -webkit-text-fill-color: aliceblue;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Handjet', cursive;
+font-family: 'Press Start 2P', cursive;
+font-size: smaller;
+   
+  }
+  nav{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background: rgb(166, 196, 222);
+    position:fixed;
+    top:0;
+    width:100%;
+    height: 60px;
+    }
+    
+   
+  
+    BODY {
+      background:  rgb(204, 213, 224);
+      overflow: scroll;
+      scrollbar-color: rgb(227, 190, 228) transparent;
+      scrollbar-width:thin;
+   }
+
+   body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+body::-webkit-scrollbar-track {
+    background-color:#ff0000;
+  }
+body::-webkit-scrollbar-thumb {
+    background-color:rgb(115, 202, 212);
+  }
+
+
+    .text--line {
+      font-size: 0.5em;
+   }
+    svg {
+     position:absolute;
+      width: 100%;
+      height: 100%;
+      margin-left: -740px;
+   }
+    .text-copy {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 7% 28%;
+      stroke-width: 5px;
+      animation: stroke-offset 4s infinite linear;
+   }
+    .text-copy:nth-child(1) {
+      stroke: #360745;
+      stroke-dashoffset: 7%;
+   }
+    .text-copy:nth-child(2) {
+      stroke: #d61c59;
+      stroke-dashoffset: 14%;
+   }
+    .text-copy:nth-child(3) {
+      stroke: #e7d84b;
+      stroke-dashoffset: 21%;
+   }
+    .text-copy:nth-child(4) {
+      stroke: #efeac5;
+      stroke-dashoffset: 28%;
+   }
+    .text-copy:nth-child(5) {
+      stroke: #1b8798;
+      stroke-dashoffset: 35%;
+   }
+    @keyframes stroke-offset {
+      50% {
+        stroke-dashoffset: 35%;
+        stroke-dasharray: 0 87.5%;
+     }
+   }
+
+    
